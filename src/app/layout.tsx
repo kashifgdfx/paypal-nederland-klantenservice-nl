@@ -87,6 +87,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
         />
+        <meta name="google-site-verification" content="6VvFXqqFhcqQnO5uZM8Ug6NV2PatA1PSMfjPt13Jzzg" />
       </head>
       <body className="antialiased min-h-screen bg-slate-50 text-slate-900 flex flex-col selection:bg-blue-100 selection:text-[#003087]">
         {children}
