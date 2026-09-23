@@ -197,7 +197,7 @@ export default function Footer() {
               </a>
               <a
                 href="#cookies"
-                onClick={(e) => handleNavclick_fallback(e, "#cookies")}
+                onClick={(e) => handleNavClick(e, "#cookies")}
                 className="hover:underline"
               >
                 Cookies
