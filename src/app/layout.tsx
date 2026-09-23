@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { siteContent } from '@/data/content';
-import { Phone } from 'lucide-react'; // Import icon for vertical contact button
+import { Phone } from 'lucide-react'; // Import icon for contact button
 
 export const metadata: Metadata = {
   title: siteContent.metadata.title,
@@ -18,6 +18,11 @@ export const metadata: Metadata = {
     'PayPal telefoonnummer',
     'PayPal refund',
   ],
+  icons: {
+    icon: '/gemini-svg.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   alternates: {
     canonical: `/${siteContent.metadata.url}`,
   },
@@ -86,18 +91,15 @@ export default function RootLayout({
       <body className="antialiased min-h-screen bg-slate-50 text-slate-900 flex flex-col selection:bg-blue-100 selection:text-[#003087]">
         {children}
 
-        {/* Vertical Floating Contact Tab on the Right Side */}
-        <div className="fixed top-1/2 -translate-y-1/2 right-0 z-50 hidden sm:block">
+        {/* Horizontal Floating Contact Tab at the Bottom-Right */}
+        <div className="fixed bottom-6 right-6 z-50">
           <a
             href={`tel:${phoneNumber}`}
-            className="group flex items-center gap-2.5 bg-[#003087] hover:bg-[#001C64] text-white py-4 px-3 rounded-l-xl shadow-2xl transition-all duration-300 hover:px-4 border-l border-t border-b border-white/20"
-            style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
+            className="group flex items-center gap-2.5 bg-[#003087] hover:bg-[#001C64] text-white py-3 px-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 border border-white/20"
             aria-label="Klantenservice Bel"
           >
-            <div className="rotate-90 mb-1">
-              <Phone className="w-4 h-4 text-cyan-300 animate-pulse" />
-            </div>
-            <span className="text-xs font-bold tracking-widest uppercase">
+            <Phone className="w-4 h-4 text-cyan-300 animate-pulse shrink-0" />
+            <span className="text-xs font-bold tracking-wider uppercase whitespace-nowrap">
               Bel: {phoneNumber}
             </span>
           </a>

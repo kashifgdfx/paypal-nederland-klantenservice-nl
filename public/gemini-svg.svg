@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="pGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#003087" />
+      <stop offset="100%" stop-color="#0070BA" />
+    </linearGradient>
+  </defs>
+  {/* Rounded Square Background */}
+  <rect width="32" height="32" rx="8" fill="url(#pGrad)" />
+  {/* Stylized Modern 'P' Letter */}
+  <path d="M10 9H17C20.3137 9 23 11.6863 23 15C23 18.3137 20.3137 21 17 21H13V25H10V9Z" fill="#FFFFFF" />
+  <path d="M13 12H16.5C18.433 12 20 13.567 20 15.5C20 17.433 18.433 19 16.5 19H13V12Z" fill="#0070BA" />
+</svg>

@@ -45,12 +45,56 @@ export default function Navbar() {
             href="#"
             className="flex items-center gap-3 group focus:outline-hidden shrink-0"
           >
-  <div className="flex items-center group cursor-pointer">
-  <img
-    src="/paypal-logo.png"
-    alt="PayPal Logo"
-    className="w-18 h-18 object-contain transition-transform group-hover:scale-105 duration-200"
+ <div className="flex items-center group cursor-pointer select-none">
+  {/* Official Style Vector SVG Logo */}
+   <svg
+
+  className="w-12 h-13 transition-transform group-hover:scale-105 duration-200"
+
+  viewBox="0 0 36 36"
+
+  fill="none"
+
+  xmlns="http://www.w3.org/2000/svg"
+
+>
+
+  {/* Light Blue / Cyan Background P */}
+
+  <path
+
+    d="M28.2 9.5C27 5.1 23.2 2 18.2 2H10.1C9.4 2 8.8 2.6 8.7 3.3L4.3 30.6C4.2 31.2 4.7 31.7 5.3 31.7H10.4C11 31.7 11.5 31.2 11.6 30.6L13.1 21.1H16.2C21.8 21.1 26.4 18.7 28.2 13.8C28.9 12 28.8 10.6 28.2 9.5Z"
+
+    fill="#33BBFF"
+
   />
+
+
+
+  {/* Middle Royal Blue Blend */}
+
+  <path
+
+    d="M24.2 13.1C23 8.7 19.3 5.6 14.3 5.6H10.1C9.4 5.6 8.8 6.2 8.7 6.9L6 23.2H9.7C15.3 23.2 19.9 20.8 21.7 15.9C22.4 14.1 23.5 13.5 24.2 13.1Z"
+
+    fill="#0070BA"
+
+  />
+
+
+
+  {/* Larger & Expanded Dark P On Top */}
+
+  <path
+
+    d="M26.8 14.2C25.4 9.1 21.2 5.2 15.5 5.2H5.8C5 5.2 4.3 5.9 4.2 6.7L0.8 27.5C0.7 28.3 1.3 29 2.1 29H8.2C9 29 9.7 28.3 9.8 27.5L11.2 18.9H13.8C19.7 18.9 24.7 16.5 26.8 10.8C27.3 9.7 27.1 8.5 26.8 14.2Z"
+
+    fill="#002266"
+
+  />
+
+</svg>
+
   <span className="ml-2.5 text-2xl font-black tracking-tight text-[#003087]">
     PayPal
   </span>
