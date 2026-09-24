@@ -229,37 +229,42 @@ export default function Footer() {
         </div>
 
         {/* Footer Disclaimers & Fine Print */}
-        <div className="pt-6 space-y-3 text-[11px] text-[#888888] leading-relaxed">
-          <p>Alle schermafbeeldingen zijn alleen ter illustratie.</p>
-          <p>
-            <span className="text-white font-semibold">1</span>{" "}
-            Aankoopbescherming is alleen beschikbaar voor in aanmerking komende
-            aankopen. Tijdslimiet en andere voorwaarden zijn van toepassing.
-            Raadpleeg het gedeelte over Aankoopbescherming in je lokale{" "}
-            <a
-              href="#gebruikersovereenkomst"
-              onClick={(e) => handleNavClick(e, "#gebruikersovereenkomst")}
-              className="text-white underline hover:text-blue-400"
-            >
-              Gebruikersovereenkomst
-            </a>{" "}
-            voor meer informatie.
-          </p>
-          <p>
-            <span className="text-white font-semibold">2</span> Een account is
-            vereist om geld te verzenden en te ontvangen. Er worden kosten in
-            rekening gebracht voor het omrekenen van valuta en het overmaken van
-            ander geld dan GBP naar een rekening in een ander land.{" "}
-            <a
-              href="#betalingsproblemen"
-              onClick={(e) => handleNavClick(e, "#betalingsproblemen")}
-              className="text-white underline hover:text-blue-400"
-            >
-              Zie kosten
-            </a>
-            .
-          </p>
-        </div>
+       <div className="pt-6 space-y-3 text-[11px] text-[#888888] leading-relaxed">
+  <p>Alle schermafbeeldingen zijn uitsluitend ter illustratie.</p>
+
+  <p>
+    <span className="text-white font-semibold">1</span>{" "}
+    Aankoopbescherming kan alleen van toepassing zijn op bepaalde in aanmerking
+    komende transacties. De voorwaarden voor geschiktheid, termijnen en
+    aanvullende voorwaarden kunnen variëren. Raadpleeg de voorwaarden van
+    Aankoopbescherming in de{" "}
+    <a
+      href="#gebruikersovereenkomst"
+      onClick={(e) => handleNavClick(e, "#gebruikersovereenkomst")}
+      className="text-white underline hover:text-blue-400"
+    >
+      Gebruikersovereenkomst
+    </a>{" "}
+    die van toepassing is op uw locatie voor volledige details.
+  </p>
+
+  <p>
+    <span className="text-white font-semibold">2</span>{" "}
+    U heeft een in aanmerking komend account nodig om geld te verzenden of te
+    ontvangen. Er kunnen wisselkoerskosten van toepassing zijn bij het
+    omrekenen van valuta. Er kunnen ook extra kosten in rekening worden gebracht
+    wanneer u een andere valuta dan GBP overmaakt naar een account in een ander
+    land.{" "}
+    <a
+      href="#betalingsproblemen"
+      onClick={(e) => handleNavClick(e, "#betalingsproblemen")}
+      className="text-white underline hover:text-blue-400"
+    >
+      Raadpleeg het toepasselijke kostenoverzicht
+    </a>{" "}
+    voor actuele tarieven en voorwaarden.
+  </p>
+</div>
       </div>
     </footer>
   );
